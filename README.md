@@ -21,10 +21,13 @@ promote smarter, data-driven farming practices across Sri Lanka.
 
 **Dependency Type**
 **_Description_**
+
 **1. Domain Expertise**
 Knowledge in agriculture, especially coconut farming practices and phenology.
+
 **2. External Supervision**
 Support and agronomic validation from Coconut Research Institute (CRI).
+
 **3. Datasets**
 Access to accurate and relevant datasets for Sri Lankan coconut farming:
 • Historical yield data
@@ -37,6 +40,7 @@ Access to accurate and relevant datasets for Sri Lankan coconut farming:
  
 **4. Machine Learning Libraries**
 Frameworks like Scikit-learn, TensorFlow, or PyTorch for building and training models.
+
 **5. Software Stack**
 Backend: Node.js / Spring Boot
 Frontend: React / Angular

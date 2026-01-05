@@ -17,7 +17,8 @@ Detection & Fertilizer Recommendation System. Together, these
 components aim to improve yield, reduce resource waste, and
 promote smarter, data-driven farming practices across Sri Lanka.
 
-✅ Project Dependencies
+Project Dependencies
+
 Dependency Type
 Description
 1. Domain Expertise

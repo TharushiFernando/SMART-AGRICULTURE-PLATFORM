@@ -1,7 +1,7 @@
 # SMART-AGRICULTURE-PLATFORM
 Smart Agriculture Advisory Platform for Coconut Plantations in Sri Lanka 
 
-INTRODUCTION TO THE OVERALL PROJECT
+**INTRODUCTION TO THE OVERALL PROJECT**
  
 The coconut industry plays a vital role in Sri Lanka’s agriculture-
 based economy, yet many farmers still rely on traditional methods
@@ -17,15 +17,15 @@ Detection & Fertilizer Recommendation System. Together, these
 components aim to improve yield, reduce resource waste, and
 promote smarter, data-driven farming practices across Sri Lanka.
 
-Project Dependencies
+**Project Dependencies**
 
-Dependency Type
-Description
-1. Domain Expertise
+**Dependency Type**
+**_Description_**
+**1. Domain Expertise**
 Knowledge in agriculture, especially coconut farming practices and phenology.
-2. External Supervision
+**2. External Supervision**
 Support and agronomic validation from Coconut Research Institute (CRI).
-3. Datasets
+**3. Datasets**
 Access to accurate and relevant datasets for Sri Lankan coconut farming:
 • Historical yield data
  
@@ -35,9 +35,9 @@ Access to accurate and relevant datasets for Sri Lankan coconut farming:
  
 • Disease image samples (for CNN-based models)
  
-4. Machine Learning Libraries
+**4. Machine Learning Libraries**
 Frameworks like Scikit-learn, TensorFlow, or PyTorch for building and training models.
-5. Software Stack
+**5. Software Stack**
 Backend: Node.js / Spring Boot
 Frontend: React / Angular
  
@@ -45,14 +45,15 @@ Database: PostgreSQL / MongoDB
  
 Deployment: Cloud (Firebase / AWS)
  
-6. API Services
+**6. API Services**
 Integration of external weather APIs or forecast data sources.
-7. Internet Connectivity
+**7. Internet Connectivity**
 Required for real-time data syncing, model inference, and farmer dashboard updates.
-8. Human Resources
+**8. Human Resources**
 Continuous input and testing from farmers, agronomists, and software developers.
-9. Ethical Clearance
+**9. Ethical Clearance**
 Permissions to use data from farmers or CRI, and ensure privacy of agricultural insights.
-10. Budget
+**10. Budget**
 Allocated funds for dataset collection, travel (CRI visits), and platform hosting.
- 
+ <img width="623" height="532" alt="Screenshot 2026-01-05 at 08 11 08" src="https://github.com/user-attachments/assets/8a69dbc1-6f67-481f-b150-7813b6871c4b" />
+

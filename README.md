@@ -1,5 +1,6 @@
 # SMART-AGRICULTURE-PLATFORM
 Smart Agriculture Platform for Coconut Plantation
+
 INTRODUCTION TO THE OVERALL PROJECT
  
 The coconut industry plays a vital role in Sri Lanka’s agriculture-

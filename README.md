@@ -1,5 +1,5 @@
 # SMART-AGRICULTURE-PLATFORM
-Smart Agriculture Platform for Coconut Plantation
+Smart Agriculture Advisory Platform for Coconut Plantations in Sri Lanka 
 
 INTRODUCTION TO THE OVERALL PROJECT
  

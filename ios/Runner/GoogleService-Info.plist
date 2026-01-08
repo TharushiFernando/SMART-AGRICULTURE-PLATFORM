@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>507776540765-cpqs809m4dutv0tf7crip9q5eir47oml.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.507776540765-cpqs809m4dutv0tf7crip9q5eir47oml</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>507776540765-9d44djp16h8re1e1djks62acho7vtldp.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB0SeXKaL2OnvTqn7gf-HKpPuaG8CjpFQE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>507776540765</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.invader.cocosmart.cocosmartapp</string>
+	<key>PROJECT_ID</key>
+	<string>access-control-system-28125</string>
+	<key>STORAGE_BUCKET</key>
+	<string>access-control-system-28125.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:507776540765:ios:e63c66a455c6e1a95c6db4</string>
+	<key>DATABASE_URL</key>
+	<string>https://access-control-system-28125-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

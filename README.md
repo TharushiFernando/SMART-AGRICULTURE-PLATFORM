@@ -39,15 +39,19 @@ Access to accurate and relevant datasets for Sri Lankan coconut farming:
 • Disease image samples (for CNN-based models)
  
 **4. Machine Learning Libraries**
-Frameworks like Scikit-learn, TensorFlow, or PyTorch for building and training models.
+pandas        # data loading & preprocessing
+numpy         # numerical operations
+joblib        # saving/loading the trained model
+TensorFlow
+sklearn
 
 **5. Software Stack**
-Backend: Node.js / Spring Boot
-Frontend: React / Angular
+Backend: Python Flask/Google cloud function
+Frontend: Flutter
  
-Database: PostgreSQL / MongoDB
+Database: Firestore / SQL
  
-Deployment: Cloud (Firebase / AWS)
+Deployment: Google Cloud Platform
  
 **6. API Services**
 Integration of external weather APIs or forecast data sources.

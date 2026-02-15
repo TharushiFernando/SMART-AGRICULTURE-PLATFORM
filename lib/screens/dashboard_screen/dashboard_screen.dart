@@ -1,12 +1,10 @@
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
-import 'package:cocosmartapp/models/land_model/land_model.dart';
 import 'package:cocosmartapp/provider/auth_provider/auth_provider.dart';
 import 'package:cocosmartapp/provider/estate_provider/land_provider.dart';
 import 'package:cocosmartapp/screens/dashboard_screen/tab_bars/irigation_tab.dart';
 import 'package:cocosmartapp/screens/dashboard_screen/tab_bars/stats_tab.dart';
 import 'package:cocosmartapp/screens/dashboard_screen/tab_bars/yield_prediction_tab.dart';
 import 'package:cocosmartapp/screens/notification_screen/notification_screen.dart';
-import 'package:cocosmartapp/screens/profile_screen/profile_screen.dart';
 import 'package:cocosmartapp/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +23,6 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProviderStateMixin{
   late TabController tabController;
-  LandModel? selectedLand;
 
   @override
   void initState() {
@@ -46,10 +43,8 @@ class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProv
 
   @override
   Widget build(BuildContext context) {
-    return Consumer2<AuthProvider,LandProvider>(
-      builder: (BuildContext context, AuthProvider authProvider,LandProvider landProvider, Widget? child) {
-        if(landProvider.lands?.isNotEmpty??false)
-          selectedLand = landProvider.lands?.elementAt(0);
+    return Consumer<AuthProvider>(
+      builder: (BuildContext context, AuthProvider authProvider, Widget? child) {
         return Scaffold(
             backgroundColor: ColorResources.MAIN_BACKGROUND_COLOR,
             appBar: AppBar(
@@ -67,7 +62,9 @@ class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProv
                 CircularProfileAvatar("imageUrl",errorWidget: (context,string,object){
                   return GestureDetector(
                     onTap: (){
-                      Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeft,child: ProfilePage(user: authProvider.userModels)));
+                      authProvider.signOut().then((onValue){
+                        Navigator.pushAndRemoveUntil(context, PageTransition(type: PageTransitionType.rightToLeft,child: SplashScreen()), (route)=>false);
+                      });
                     },
                       child: Icon(CupertinoIcons.person,color: ColorResources.MAIN_TEXT_COLOR,size: 30,));
                 },
@@ -105,14 +102,6 @@ class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProv
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    if(landProvider.lands?.isNotEmpty??false)
-                      Row(
-                        children: [
-                          Icon(CupertinoIcons.location_circle,color: ColorResources.BUTTON_BACKGROUND_COLOR,),
-                          SizedBox(width: 5,),
-                          Text(selectedLand?.name??"No Land Selected",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: ColorResources.MAIN_TEXT_COLOR),)
-                        ],
-                      ),
                     SizedBox(child: Image.asset("assets/images/logo.png",fit: BoxFit.cover,width: 60,height: 60,)),
                     Text('COCO Smart',style: TextStyle(fontSize: 25,fontWeight: FontWeight.w700,color: ColorResources.MAIN_TEXT_COLOR,letterSpacing: 0),),
                     SizedBox(height: 15,),

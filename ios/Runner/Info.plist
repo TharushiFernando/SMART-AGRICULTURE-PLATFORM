@@ -36,10 +36,6 @@
     <string>This app needs your location to fetch environmental data.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>This app needs your location even in the background.</string>
-    <key>FirebaseMessagingAutoInitEnabled</key>
-    <true/>
-    <key>NSPushNotificationsUsageDescription</key>
-    <string>This app uses push notifications to alert you about new bookings and updates.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

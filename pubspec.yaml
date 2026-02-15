@@ -47,13 +47,9 @@ dependencies:
   cloud_firestore: ^6.1.2
   firebase_auth: ^6.1.4
   firebase_messaging: ^16.1.1
-  flutter_local_notifications: ^17.0.0
   google_weather_flutter: ^0.1.2
   geolocator: ^14.0.2
   google_maps_flutter: ^2.14.0
-  android_alarm_manager_plus: ^5.0.0
-  image_picker: ^1.2.1
-  shared_preferences: ^2.5.4
 
 dev_dependencies:
   flutter_test:

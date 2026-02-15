@@ -7,8 +7,6 @@ import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 
-import '../../helpers/notification_helpers.dart';
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -33,13 +31,6 @@ class _SplashScreenState extends State<SplashScreen> {
           content: Text("Location permission is required to use this app!"))
       );
     }
-    await NotificationHelpers().requestPermission().then((onValue){
-      NotificationHelpers().initLocalNotifications();
-      NotificationHelpers().setupInteractedMessage();
-      NotificationHelpers().listenForegroundMessages();
-    }).catchError((onError){
-      print("Notification setup error: $onError");
-    });
     await Provider.of<AuthProvider>(context,listen: false).checkUserLoggedIn().then((status){
       if(status??false){
         Navigator.pushReplacement(context, PageTransition(type: PageTransitionType.rightToLeft, child: DashboardScreen()));

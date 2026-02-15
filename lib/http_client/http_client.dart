@@ -13,8 +13,8 @@ class DioClient {
   DioClient._internal() {
     BaseOptions options = BaseOptions(
       baseUrl: '',
-      connectTimeout: Duration(milliseconds: 10000),
-      receiveTimeout: Duration(milliseconds: 10000),
+      connectTimeout: Duration(milliseconds: 5000),
+      receiveTimeout: Duration(milliseconds: 3000),
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',

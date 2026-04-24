@@ -1,4 +1,4 @@
-# cocosmartapp
+# cocosmart app
 
 A new Flutter project.
 
